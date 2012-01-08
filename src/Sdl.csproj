@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F83DB3F3-108C-4FDA-B81C-A5198B5DD33D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sdl</RootNamespace>
+    <AssemblyName>SDL.net</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Core\BooleanType.cs" />
+    <Compile Include="Core\EventMask.cs" />
+    <Compile Include="Core\Events.cs" />
+    <Compile Include="Core\EventTypes.cs" />
+    <Compile Include="Core\NativeFunctionReturnFlags.cs" />
+    <Compile Include="Core\QuitEventArgs.cs" />
+    <Compile Include="Core\ResourceBase.cs" />
+    <Compile Include="Core\SdlEventArgs.cs" />
+    <Compile Include="Core\SdlException.cs" />
+    <Compile Include="Core\SdlSystem.cs" />
+    <Compile Include="Core\Timer.cs" />
+    <Compile Include="Core\UserEventArgs.cs" />
+    <Compile Include="Input\KeyboardEventArgs.cs" />
+    <Compile Include="Core\ActiveEventArgs.cs" />
+    <Compile Include="Input\MouseMotionEventArgs.cs" />
+    <Compile Include="Input\MouseButtonEventArgs.cs" />
+    <Compile Include="Input\JoystickButtonEventArgs.cs" />
+    <Compile Include="Input\JoystickAxisEventArgs.cs" />
+    <Compile Include="Input\JoystickHatEventArgs.cs" />
+    <Compile Include="Input\JoystickBallEventArgs.cs" />
+    <Compile Include="Graphics\VideoResizeEventArgs.cs" />
+    <Compile Include="Graphics\VideoExposeEventArgs.cs" />
+    <Compile Include="Core\TickEventArgs.cs" />
+    <Compile Include="Audio\ChannelFinishedEventArgs.cs" />
+    <Compile Include="Audio\MusicFinishedEventArgs.cs" />
+    <Compile Include="Core\WindowManagerEventArgs.cs" />
+    <Compile Include="Audio\SdlMixerSystem.cs" />
+    <Compile Include="Audio\Mixer.cs" />
+    <Compile Include="Graphics\SurfaceLostException.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Audio\" />
+    <Folder Include="Graphics\" />
+    <Folder Include="Input\" />
+  </ItemGroup>
+</Project>

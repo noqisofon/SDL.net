@@ -1,0 +1,16 @@
+\#*#
+*~
+*.*~
+*.txt
+*.log
+*.diff
+*.pidb
+src/bin/
+src/*.pc
+*.userprefs
+autom4te.cache/
+install-sh
+missing
+commit_message.tmp
+configure
+Makefile

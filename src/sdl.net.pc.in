@@ -1,0 +1,6 @@
+Name: SDL.net
+Description: SDL.net
+Version: 0.1
+
+Requires: 
+Libs: -r:@expanded_libdir@/@PACKAGE@/SDL.net.dll
